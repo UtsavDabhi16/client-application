@@ -1,12 +1,17 @@
 package com.inexture.clientapplication.model;
 
-public class Employee
+import java.io.Serializable;
+
+public class Employee implements Serializable
 {
     private String empId;
     private String empName;
 
     public String getEmpId() {
         return empId;
+    }
+
+    public Employee() {
     }
 
     public void setEmpId(String empId) {
